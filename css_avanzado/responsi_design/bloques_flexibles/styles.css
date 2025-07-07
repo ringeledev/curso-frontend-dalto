@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+.bloque{
+    display:inline-block;
+    min-width: 200px;/*miniomo de ancho*/
+    background-color: #7bf;
+    margin: auto;
+    width: 100%;
+    flex: 1;
+    font-size: 12px; /*esto el tamaño de la letra dentro del contenedor bloque*/
+    padding: 10px; /*crea un espacio dentro del contenido y el borde*/
+    margin: 4px;/* crea un espacio afuera de otro elemento separandolo de otros*/
+
+}

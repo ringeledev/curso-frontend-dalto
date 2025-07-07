@@ -1,0 +1,98 @@
+/* 
+Selecciona cualquier elemento dentro del <body> que tenga la clase 
+.elemento-uno, .elemento-dos o .elemento-tres, y les aplica el color de texto aqua.
+
+La pseudo-clase :is() permite agrupar varios selectores para simplificar el código 
+y evitar repetir estilos. Es equivalente a escribir:
+
+body .elemento-uno,
+body .elemento-dos,
+body .elemento-tres {
+    color: aqua;
+}
+*/
+body :is(.elemento-uno, .elemento-dos, .elemento-tres) {
+    color: aqua;
+}
+
+/* 
+Selecciona cualquier elemento dentro del <body> que tenga la clase 
+.elemento-uno, .elemento-dos o .elemento-tres, y les aplica el color de texto aqua.
+
+La pseudo-clase :is() permite agrupar varios selectores para simplificar el código 
+y evitar repetir estilos. Es equivalente a escribir:
+
+body .elemento-uno,
+body .elemento-dos,
+body .elemento-tres {
+    color: aqua;
+}
+*/
+
+body :is(.elemento-uno, .elemento-dos, .elemento-tres) {
+    color: aqua;
+}
+
+
+/*
+Selecciona cualquier elemento dentro del <body> que tenga la clase 
+.elemento-uno, .elemento-dos o .elemento-tres, y les aplica el color de texto aqua.
+
+La pseudo-clase :where() funciona igual que :is(), permitiendo agrupar selectores 
+para escribir menos código. Sin embargo, hay una diferencia importante:
+
+- :is() **mantiene la especificidad** del selector más específico dentro del grupo.
+- :where() **siempre tiene especificidad cero**, sin importar los selectores que incluya.
+
+Esto hace que :where() sea útil para aplicar estilos sin afectar la cascada 
+o sobreescribir reglas más específicas.
+
+Ejemplo equivalente con :is(), pero con mayor especificidad:
+body :is(.elemento-uno, .elemento-dos, .elemento-tres) { ... }
+
+Con :where(), este estilo puede ser fácilmente sobreescrito por otras reglas más específicas.
+*/
+body :where(.elemento-uno, .elemento-dos, .elemento-tres) {
+    color: aqua;
+}
+
+body:has(.elemento-uno){
+    background-color: black;
+    color: white;
+}
+
+
+/*
+Cambia el color del texto del <input> según si es válido o no.
+
+- Si el input es válido → el texto se ve verde.
+- Si es inválido → el texto se ve rojo.
+
+Esto funciona solo si el input tiene validación (como required, type="email", etc.).
+*/
+
+/* input:valid {
+    color: green ;
+}
+
+input:invalid { 
+    color: red;
+} */
+
+
+/*
+Cambia el color del <label> según si su <input> hijo es válido o no.
+
+- Si el input dentro del label es válido → el label se pone verde.
+- Si el input es inválido → el label se pone rojo.
+
+Se usa :has(), que permite seleccionar el label *si contiene* un input con cierto estado.
+*/
+
+label:has(input:valid) {
+    color: green;
+}
+
+label:has(input:invalid){
+    color: red;
+}

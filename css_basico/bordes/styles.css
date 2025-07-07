@@ -1,0 +1,39 @@
+
+di {
+    background-color: red;
+    width:150px;
+    margin: auto;
+    text-align: center;
+
+    /* 
+    border-width:3px;
+    border-color: rgb(16, 225, 110);
+    border-style: solid;*/
+
+    /*SI HAGO ESTO ES LO MISMO SI HICERA LO MISMO DE ARRIBA*/
+    border: 3px solid black;
+
+    /*ESTO REDONDEA EL CUADRADO*/
+    border-radius: 6px; 
+}
+
+
+.datos {
+    text-align: center;
+;
+
+}
+body{
+    background: black;
+}
+
+input {
+    border: none;
+    margin: 5px;
+    padding: 6px  9px;
+    border-bottom: 1px;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: greenyellow;
+    
+}

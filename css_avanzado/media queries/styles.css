@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+
+}
+
+.flexbox{
+    display: flex;
+    background-color: antiquewhite;
+    min-width: 120px;
+    margin: 10px 0 0 0;
+}
+
+.flex-item{
+    border: 1px solid black; 
+    padding: 30px;
+    
+   
+}
+
+/* cuando la pantalla sea menos de 500px, dejalo en columnas */
+@media screen and (max-width:400px) {
+    .flexbox{
+        flex-direction: column;
+    }
+    
+}

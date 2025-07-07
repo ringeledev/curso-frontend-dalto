@@ -1,0 +1,29 @@
+p {
+    color: red;
+    font-family:Dalto;
+    font-size: 13px;
+    font-weight: 900; /*BOLD HACE QUE LA LETRA SE MUESTRA MAS GRUESA, ES COMO PONERLA EN 700*/
+    font-style: italic;
+    text-align: justify ;
+    line-height: 1.3;
+    text-transform: uppercase; /*MAYUSCULA*/
+
+
+}
+
+h1 {   
+    text-align: center;
+}
+
+span {
+    text-decoration: line-through;
+}   
+
+a {
+    text-decoration: none;
+}
+
+button{
+    color: aqua;
+    background-color: black;
+}

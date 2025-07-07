@@ -1,0 +1,52 @@
+/* ^ = SIGNIFICA EMPIEZA CON */
+img[src^="0"]{
+    width: 100% ;
+}
+
+/* $ = SIGINIFICA TERMINA CON EJEMPLO
+ .jpg */
+
+/* img [src$=".jpg"]{
+    width: 100% ;
+} */
+
+/* EN ESTE CASO DEBE SER UN VALOR EXACTO*/
+img[src="goku.jpg"]{
+    width: 100% ;
+}
+
+/* si queremos estilizar solo los li que estan dentro de un ul tenemos que mencionar el ul antes del li*/
+ /* ul li {
+    color: red;
+} */
+
+/* DESCONMENTA LO DE ABAJO PARA QUE VEAS Y COMENTEA LO DE ARRIBA */
+/* li{
+    color: blue;
+} */
+
+
+
+
+/* SELECCION DESCENDIENTE */
+ul li {
+    color: #666;
+}
+
+
+/* HIJO DIRECTO ">" */
+li > em {
+    color: red;
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+h1 + p {
+    color: blue;
+}
+
+/*SELECTOR DE HERMANOS GENERALES */
+
+h1 ~ p {
+    color: blue ;
+}
+

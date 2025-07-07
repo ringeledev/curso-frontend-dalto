@@ -1,0 +1,31 @@
+body{
+    margin: 0 ;
+}
+
+.box {
+    padding: 20px 50px;
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* border-radius: 50px; */
+}
+
+
+.box-uno {
+    background: #1489;
+    margin-left: 100px;
+    color: #fff;
+    border-top: 5px solid #059;
+
+} 
+
+.box-dos {
+    background-color: #6eed93;
+    margin-left: 100px;
+    border-top: 5px solid #0f491f;
+    color: rgb(29, 51, 51);
+
+}
+
+

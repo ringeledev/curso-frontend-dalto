@@ -1,0 +1,15 @@
+p {
+    color: blue;
+    
+}
+
+.ingrediente-faltante {
+    color: red ;
+}
+li {
+    color: black;
+}
+
+#ingrediente-secreto {
+    color: blue;
+}

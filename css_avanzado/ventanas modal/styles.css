@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+dialog{
+    background-color: rgb(255, 254, 254);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.modal__content{
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.modal__title{
+    margin-top: 10px;
+}

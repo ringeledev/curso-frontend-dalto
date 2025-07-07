@@ -1,0 +1,14 @@
+/* Aquí estamos aplicando estilos al mismo <h1> pero con diferentes niveles de **especificidad**. El navegador usará la regla con mayor especificidad para aplicar el estilo final */
+
+/* EL ID ES EL MAS ESPECIFICO YA QUE CUENTA CON (1, 0, 0 */
+#titulo-id{
+    color: red;
+}
+/* LA CLASE ES EL SEGUNDO MAS ESPECIFICO YA QUE CUENTA CON (0,1,0) */
+.titulo-clase{
+    color: green;
+}
+/* Y ESTE YA ES EL GENERAL CON (0,0,1) */
+h1{
+    color: black;
+}
